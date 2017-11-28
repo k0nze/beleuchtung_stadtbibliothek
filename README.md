@@ -23,7 +23,8 @@ Pin-Belegung `CON1`:
 ![./images/pcb_3d.png](./images/pcb_3d.png)
 
 ### Gerber Dateien für Seeedstudio
-TODO
+[kicad/gerber](./kicad/gerber)
+
 
 ### Bauelemente (für 10 Platinen)
 Reichelt:
@@ -48,4 +49,20 @@ Bricklink:
  * 360x [4070, white](https://www.bricklink.com/v2/catalog/catalogitem.page?P=4070#T=S&C=1&O={"color":1})
 
 ## Steuerung
-TODO
+Die Steuerung wird derzeit durch einen Arduino Mega 2560 übernommen. Der Anschluss der Steuerleitungen für die Platinen ist in [demo0.ino](./src/demo0/demo0.ino) dokumentiert. In [demo0.ino](./src/demo0/demo0.ino) werden alle LEDs eingeschaltet.
+
+### Verdrahtung
+
+* `VCC`: orange
+* `GND`: blau/schwarz
+* `CLK`: violett/orange
+* reset: weiß
+* data: gelb/grün
+* driver: grau/braun
+
+![./images/cable_management.jpg](./images/cable_management.jpg)
+
+### Fertiges Modell
+![./images/finished.jpg](./images/finished.jpg)
+
+
